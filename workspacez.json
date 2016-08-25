@@ -1,4 +1,4 @@
-vim:ts=4:sw=4:et
+// vim:ts=4:sw=4:et
 {
     "border": "pixel",
     "current_border_width": 1,
@@ -13,17 +13,17 @@ vim:ts=4:sw=4:et
     "percent": 0.5,
     "swallows": [
        {
-        "class": "^konsole$",
-        "instance": "^konsole$",
-        "title": "^i3\\ \\:\\ bash\\ \\—\\ Konsole$",
-        "transient_for": "^$"
+       // "class": "^konsole$",
+       // "instance": "^konsole$",
+       // "title": "^i3\\ \\:\\ bash\\ \\—\\ Konsole$",
+       // "transient_for": "^$"
        }
     ],
     "type": "con"
 }
 
 {
-     splitv split container with 2 children
+    // splitv split container with 2 children
     "border": "pixel",
     "floating": "auto_off",
     "layout": "splitv",
@@ -44,10 +44,10 @@ vim:ts=4:sw=4:et
             "percent": 0.5,
             "swallows": [
                {
-                "class": "^konsole$",
-                "instance": "^konsole$",
-                "title": "^natasha\\ \\:\\ bash\\ \\—\\ Konsole$",
-                "transient_for": "^$"
+               // "class": "^konsole$",
+               // "instance": "^konsole$",
+               // "title": "^natasha\\ \\:\\ bash\\ \\—\\ Konsole$",
+               // "transient_for": "^$"
                }
             ],
             "type": "con"
@@ -66,10 +66,10 @@ vim:ts=4:sw=4:et
             "percent": 0.5,
             "swallows": [
                {
-                "class": "^konsole$",
-                "instance": "^konsole$",
-                "title": "^natasha\\ \\:\\ top\\ \\—\\ Konsole$",
-                "transient_for": "^$"
+               // "class": "^konsole$",
+               // "instance": "^konsole$",
+               // "title": "^natasha\\ \\:\\ top\\ \\—\\ Konsole$",
+               // "transient_for": "^$"
                }
             ],
             "type": "con"
