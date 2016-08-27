@@ -103,7 +103,7 @@ set $workspace6 "6:?"
 set $workspace7 "7:?"
 set $workspace8 "8:?"
 set $workspace9 "9:?"
-set $workspace10 "10:Music"
+set $workspace10 "10:Settings"
 
 
 # switch to workspace
@@ -134,13 +134,20 @@ bindsym $mod+Shift+0 move container to workspace $workspace10
 
 exec_always feh --bg-scale /home/natasha/Downloads/wallpaper.jpg
 
+exec xcompmgr -c -f -n
 
-exec --no-startup-id konsole
+exec --no-startup-id "i3-msg 'workspace 1:Terminals; append_layout /home/natasha/.config/i3/workspace-terminals.json'"
+exec --no-startup-id "i3-msg 'workspace 1:Terminals; exec konsole'" 
+exec --no-startup-id "i3-msg 'workspace 1:Terminals; exec konsole'" 
+exec --no-startup-id "i3-msg 'workspace 1:Terminals; exec konsole'" 
 exec thunderbird
 exec firefox
 exec XDG_CURRENT_DESKTOP=kde kate /home/natasha/.config/i3/config
 exec XDG_CURRENT_DESKTOP=kde dolphin
 #exec --no-startup-id konsole -e cmus
+exec XDG_CURRENT_DESKTOP=kde systemsettings5
+
+
 
 #assign
 
@@ -149,9 +156,7 @@ assign [class="Firefox"] → $workspace2
 assign [class="dolphin"] → $workspace4
 assign [class="Thunderbird"] → $workspace5
 assign [class="mpv"] → $workspace9
-#assign [name="natasha : cmus"] → $workspace10
-
-
+assign [class="systemsettings"] → $workspace10
 
 #
 
@@ -202,14 +207,13 @@ bar {
 #custom
 
 
-hide_edge_borders horizontal
+hide_edge_borders both
 
-exec xcompmgr -c -f -n
 
 new_window 1pixel
 
 bindsym $mod+shift+x i3lock
-#sudo XDG_CURRENT_DESKTOP=kde systemsettings5
+
 
 
 # Pulse Audio controls
