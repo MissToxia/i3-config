@@ -1,0 +1,89 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 1,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 768,
+       "width": 1366,
+       "x": 0,
+       "y": 0
+    },
+    "name": "natasha : bash — Konsole",
+    "percent": 0.5,
+    "swallows": [
+       {
+       // "class": "^konsole$",
+       // "instance": "^konsole$",
+       // "title": "^natasha\\ \\:\\ bash\\ \\—\\ Konsole$",
+       // "transient_for": "^$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    // splitv split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 768,
+               "width": 1366,
+               "x": 0,
+               "y": 0
+            },
+            "name": "natasha : bash — Konsole",
+            "percent": 0.5,
+            "swallows": [
+               {
+               // "class": "^konsole$",
+               // "instance": "^konsole$",
+               // "title": "^natasha\\ \\:\\ bash\\ \\—\\ Konsole$",
+               // "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            // splitv split container with 1 children
+            "border": "pixel",
+            "floating": "auto_off",
+            "layout": "splitv",
+            "percent": 0.5,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 1,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 768,
+                       "width": 1366,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "natasha : bash — Konsole",
+                    "percent": 1,
+                    "swallows": [
+                       {
+                       // "class": "^konsole$",
+                       // "instance": "^konsole$",
+                       // "title": "^natasha\\ \\:\\ bash\\ \\—\\ Konsole$",
+                       // "transient_for": "^$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        }
+    ]
+}
+
